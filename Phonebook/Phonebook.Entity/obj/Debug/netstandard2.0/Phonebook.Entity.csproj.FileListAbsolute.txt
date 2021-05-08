@@ -1,9 +1,0 @@
-F:\Repos\PhoneBook\Phonebook\Phonebook.Entity\bin\Debug\netstandard2.0\Phonebook.Entity.deps.json
-F:\Repos\PhoneBook\Phonebook\Phonebook.Entity\bin\Debug\netstandard2.0\Phonebook.Entity.dll
-F:\Repos\PhoneBook\Phonebook\Phonebook.Entity\bin\Debug\netstandard2.0\Phonebook.Entity.pdb
-F:\Repos\PhoneBook\Phonebook\Phonebook.Entity\obj\Debug\netstandard2.0\Phonebook.Entity.csprojAssemblyReference.cache
-F:\Repos\PhoneBook\Phonebook\Phonebook.Entity\obj\Debug\netstandard2.0\Phonebook.Entity.AssemblyInfoInputs.cache
-F:\Repos\PhoneBook\Phonebook\Phonebook.Entity\obj\Debug\netstandard2.0\Phonebook.Entity.AssemblyInfo.cs
-F:\Repos\PhoneBook\Phonebook\Phonebook.Entity\obj\Debug\netstandard2.0\Phonebook.Entity.csproj.CoreCompileInputs.cache
-F:\Repos\PhoneBook\Phonebook\Phonebook.Entity\obj\Debug\netstandard2.0\Phonebook.Entity.dll
-F:\Repos\PhoneBook\Phonebook\Phonebook.Entity\obj\Debug\netstandard2.0\Phonebook.Entity.pdb
