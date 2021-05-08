@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Repos\\PhoneBook\\Phonebook\\Phonebook.Presentation\\Phonebook.Presentation.csproj": {}
+    "F:\\Repos\\PhoneBook\\Phonebook\\Phonebook.Gateway\\Phonebook.Gateway.csproj": {}
   },
   "projects": {
-    "F:\\Repos\\PhoneBook\\Phonebook\\Phonebook.Presentation\\Phonebook.Presentation.csproj": {
+    "F:\\Repos\\PhoneBook\\Phonebook\\Phonebook.Gateway\\Phonebook.Gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Repos\\PhoneBook\\Phonebook\\Phonebook.Presentation\\Phonebook.Presentation.csproj",
-        "projectName": "Phonebook.Presentation",
-        "projectPath": "F:\\Repos\\PhoneBook\\Phonebook\\Phonebook.Presentation\\Phonebook.Presentation.csproj",
+        "projectUniqueName": "F:\\Repos\\PhoneBook\\Phonebook\\Phonebook.Gateway\\Phonebook.Gateway.csproj",
+        "projectName": "Phonebook.Gateway",
+        "projectPath": "F:\\Repos\\PhoneBook\\Phonebook\\Phonebook.Gateway\\Phonebook.Gateway.csproj",
         "packagesPath": "C:\\Users\\calis\\.nuget\\packages\\",
-        "outputPath": "F:\\Repos\\PhoneBook\\Phonebook\\Phonebook.Presentation\\obj\\",
+        "outputPath": "F:\\Repos\\PhoneBook\\Phonebook\\Phonebook.Gateway\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

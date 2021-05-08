@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonebook.Presentation", "Phonebook.Presentation\Phonebook.Presentation.csproj", "{F9B2CA0B-2133-46DF-BFDD-02A31F765F8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phonebook.Presentation", "Phonebook.Presentation\Phonebook.Presentation.csproj", "{F9B2CA0B-2133-46DF-BFDD-02A31F765F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonebook.Gateway", "Phonebook.Gateway\Phonebook.Gateway.csproj", "{D16F3B00-2537-4D9B-B139-9458656922FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F9B2CA0B-2133-46DF-BFDD-02A31F765F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9B2CA0B-2133-46DF-BFDD-02A31F765F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9B2CA0B-2133-46DF-BFDD-02A31F765F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D16F3B00-2537-4D9B-B139-9458656922FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D16F3B00-2537-4D9B-B139-9458656922FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D16F3B00-2537-4D9B-B139-9458656922FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D16F3B00-2537-4D9B-B139-9458656922FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
