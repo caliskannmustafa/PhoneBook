@@ -20,6 +20,7 @@ namespace Phonebook.Presentation.Controllers
 
         public IActionResult Index()
         {
+            //TODO: Get And Return Phonebook List From Gateway
             return View();
         }
 

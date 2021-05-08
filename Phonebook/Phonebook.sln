@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phonebook.Presentation", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonebook.Gateway", "Phonebook.Gateway\Phonebook.Gateway.csproj", "{D16F3B00-2537-4D9B-B139-9458656922FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonebook.Report", "Phonebook.Report\Phonebook.Report.csproj", "{A0F71EE0-1B26-4E0B-A7E4-4ED07640A5FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonebook.Main", "Phonebook.Main\Phonebook.Main.csproj", "{10E76079-119E-429D-86FD-B0302C17CB79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{D16F3B00-2537-4D9B-B139-9458656922FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D16F3B00-2537-4D9B-B139-9458656922FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D16F3B00-2537-4D9B-B139-9458656922FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0F71EE0-1B26-4E0B-A7E4-4ED07640A5FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0F71EE0-1B26-4E0B-A7E4-4ED07640A5FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0F71EE0-1B26-4E0B-A7E4-4ED07640A5FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0F71EE0-1B26-4E0B-A7E4-4ED07640A5FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10E76079-119E-429D-86FD-B0302C17CB79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E76079-119E-429D-86FD-B0302C17CB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E76079-119E-429D-86FD-B0302C17CB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E76079-119E-429D-86FD-B0302C17CB79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
