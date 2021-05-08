@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Phonebook.Report.DAL;
+using Phonebook.Report.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,28 +12,39 @@ namespace Phonebook.Report.Controllers
     [ApiController]
     public class ReportController : ControllerBase
     {
-        [HttpGet]
-        [Route("report/Get")]
-        public IEnumerable<WeatherForecast> Get()
+        private readonly IUnitOfWork _unitOfWork;
+
+        public ReportController(IUnitOfWork unitOfWork)
         {
-            //TODO: Get and Return UserList
-            throw new NotImplementedException();
+            _unitOfWork = unitOfWork;
         }
 
         [HttpGet]
-        [Route("report/Get/{id}")]
-        public IEnumerable<WeatherForecast> Get(int id)
+        [Route("report/Get")]
+        public IEnumerable<Entity.Report> Get()
         {
-            //TODO: Get and Return User
-            throw new NotImplementedException();
+            return _unitOfWork.ReportRepository.Get().ToList();
+        }
+
+        [HttpGet]
+        [Route("report/GetDetail/{id}")]
+        public ReportDetail GetDetail(int id)
+        {
+            return _unitOfWork.ReportDetailRepository.Get(t => t.ReportId == id).FirstOrDefault();
         }
 
         [HttpPost]
-        [Route("report/Create/{id}")]
-        public IEnumerable<WeatherForecast> Create()
+        [Route("report/Create")]
+        public int Create(Entity.Report report)
         {
-            //TODO: Create new User
-            throw new NotImplementedException();
+            report.ReportStatus = Entity.Enums.EnumReportStatus.Processing;
+            report.CreateDate = DateTime.Now;
+            _unitOfWork.ReportRepository.Insert(report);
+            _unitOfWork.Save();
+
+            //TODO: EventBusRabbitMq'ya raporla ilgili istek gönderimi yapılacak..
+
+            return report.Id;
         }
     }
 }
