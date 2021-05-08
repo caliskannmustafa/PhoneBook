@@ -39,11 +39,12 @@ namespace Phonebook.Main.Controllers
 
         [HttpPost]
         [Route("contactinfo/Create")]
-        public void Create(ContactInfo contactInfo)
+        public int Create(ContactInfo contactInfo)
         {
             contactInfo.CreateDate = DateTime.Now;
             _unitOfWork.ContactInfoRepository.Insert(contactInfo);
             _unitOfWork.Save();
+            return contactInfo.Id;
         }
 
         [HttpGet]

@@ -1,0 +1,52 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/person/{everything}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post"
+      ],
+      "DownstreamPathTemplate": "/person/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 26108
+        }
+      ],
+      "Key": "Person"
+    },
+    {
+      "UpstreamPathTemplate": "/api/contactinfo/{everything}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post"
+      ],
+      "DownstreamPathTemplate": "/contactinfo/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 26108
+        }
+      ],
+      "Key": "ContactInfo"
+    },
+    {
+      "UpstreamPathTemplate": "/api/report/{everything}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post"
+      ],
+      "DownstreamPathTemplate": "/report/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 26405
+        }
+      ],
+      "Key": "Report"
+    }
+  ]
+}
