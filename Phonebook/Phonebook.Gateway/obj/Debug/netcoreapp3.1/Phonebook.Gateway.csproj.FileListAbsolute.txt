@@ -6,6 +6,7 @@ F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\bin\Debug\netcoreapp3.1\Phonebook
 F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\bin\Debug\netcoreapp3.1\Phonebook.Gateway.runtimeconfig.dev.json
 F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\bin\Debug\netcoreapp3.1\Phonebook.Gateway.dll
 F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\bin\Debug\netcoreapp3.1\Phonebook.Gateway.pdb
+F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\obj\Debug\netcoreapp3.1\Phonebook.Gateway.csprojAssemblyReference.cache
 F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\obj\Debug\netcoreapp3.1\Phonebook.Gateway.AssemblyInfoInputs.cache
 F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\obj\Debug\netcoreapp3.1\Phonebook.Gateway.AssemblyInfo.cs
 F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\obj\Debug\netcoreapp3.1\Phonebook.Gateway.csproj.CoreCompileInputs.cache

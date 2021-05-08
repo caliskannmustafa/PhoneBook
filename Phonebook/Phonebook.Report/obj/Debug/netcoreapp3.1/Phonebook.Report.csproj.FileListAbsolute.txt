@@ -6,6 +6,7 @@ F:\Repos\PhoneBook\Phonebook\Phonebook.Report\bin\Debug\netcoreapp3.1\Phonebook.
 F:\Repos\PhoneBook\Phonebook\Phonebook.Report\bin\Debug\netcoreapp3.1\Phonebook.Report.runtimeconfig.dev.json
 F:\Repos\PhoneBook\Phonebook\Phonebook.Report\bin\Debug\netcoreapp3.1\Phonebook.Report.dll
 F:\Repos\PhoneBook\Phonebook\Phonebook.Report\bin\Debug\netcoreapp3.1\Phonebook.Report.pdb
+F:\Repos\PhoneBook\Phonebook\Phonebook.Report\obj\Debug\netcoreapp3.1\Phonebook.Report.csprojAssemblyReference.cache
 F:\Repos\PhoneBook\Phonebook\Phonebook.Report\obj\Debug\netcoreapp3.1\Phonebook.Report.AssemblyInfoInputs.cache
 F:\Repos\PhoneBook\Phonebook\Phonebook.Report\obj\Debug\netcoreapp3.1\Phonebook.Report.AssemblyInfo.cs
 F:\Repos\PhoneBook\Phonebook\Phonebook.Report\obj\Debug\netcoreapp3.1\Phonebook.Report.csproj.CoreCompileInputs.cache
@@ -17,4 +18,3 @@ F:\Repos\PhoneBook\Phonebook\Phonebook.Report\obj\Debug\netcoreapp3.1\Phonebook.
 F:\Repos\PhoneBook\Phonebook\Phonebook.Report\obj\Debug\netcoreapp3.1\Phonebook.Report.dll
 F:\Repos\PhoneBook\Phonebook\Phonebook.Report\obj\Debug\netcoreapp3.1\Phonebook.Report.pdb
 F:\Repos\PhoneBook\Phonebook\Phonebook.Report\obj\Debug\netcoreapp3.1\Phonebook.Report.genruntimeconfig.cache
-F:\Repos\PhoneBook\Phonebook\Phonebook.Report\obj\Debug\netcoreapp3.1\Phonebook.Report.csprojAssemblyReference.cache
