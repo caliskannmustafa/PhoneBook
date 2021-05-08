@@ -18,3 +18,15 @@ F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\obj\Debug\netcoreapp3.1\Phonebook
 F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\obj\Debug\netcoreapp3.1\Phonebook.Gateway.dll
 F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\obj\Debug\netcoreapp3.1\Phonebook.Gateway.pdb
 F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\obj\Debug\netcoreapp3.1\Phonebook.Gateway.genruntimeconfig.cache
+F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\bin\Debug\netcoreapp3.1\ocelot.json
+F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\bin\Debug\netcoreapp3.1\FluentValidation.dll
+F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DiagnosticAdapter.dll
+F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\bin\Debug\netcoreapp3.1\Ocelot.dll
+F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\obj\Debug\netcoreapp3.1\Phonebook.Gateway.MvcApplicationPartsAssemblyInfo.cs
+F:\Repos\PhoneBook\Phonebook\Phonebook.Gateway\obj\Debug\netcoreapp3.1\Phonebook.Gateway.csproj.CopyComplete
