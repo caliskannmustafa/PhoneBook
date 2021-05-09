@@ -35,8 +35,9 @@ namespace Phonebook.Report.ReportListen
             var factory = new ConnectionFactory
             {
                 HostName = _hostname,
-                UserName = "admin",
-                Password = "admin"
+                UserName = "ovommrzd",
+                VirtualHost= "ovommrzd",
+                Password = "PN_LcxVCW14Bdkk4fu8Ey0sgPc3RPpQC"
             };
 
             _connection = factory.CreateConnection();
