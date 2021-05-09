@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Phonebook.EventBus;
 using Phonebook.Report.DAL;
 using Phonebook.Report.Entity;
@@ -45,7 +46,14 @@ namespace Phonebook.Report.Controllers
             _unitOfWork.ReportRepository.Insert(report);
             _unitOfWork.Save();
 
-            _eventBus.PushMessage("report_create", report.Id.ToString());
+            var message = new
+            {
+                ReportId = report.Id.ToString(),
+                Latitude = report.Location.Latitude,
+                Longitude = report.Location.Longitude
+            };
+
+            _eventBus.PushMessage("report_create", JsonConvert.SerializeObject(message));
 
             return report.Id;
         }

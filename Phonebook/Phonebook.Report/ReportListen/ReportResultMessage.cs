@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Phonebook.Report.Entity
+namespace Phonebook.Report.ReportListen
 {
-    public class ReportDetail : BaseEntity
+    public class ReportResultMessage
     {
         public int ReportId { get; set; }
-        public virtual Report Report { get; set; }
         public int PersonCount { get; set; }
-        public int PhoneCount { get; set; }        
+        public int PhoneCount { get; set; }
     }
 }

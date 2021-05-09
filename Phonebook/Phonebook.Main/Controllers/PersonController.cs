@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Phonebook.Main.DAL;
+using Phonebook.Main.DataGenerate;
 using Phonebook.Main.Entity;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,8 @@ namespace Phonebook.Main.Controllers
         [Route("person/Get/{id}")]
         public Person Get(int id)
         {
+            RandomDataGenerator randomDataGenerator = new RandomDataGenerator();
+            randomDataGenerator.Generate();
             return _unitOfWork.PersonRepository.GetByID(id);
         }
 

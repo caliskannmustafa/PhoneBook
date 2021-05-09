@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using Phonebook.EventBus;
 using Phonebook.Main.DAL;
 using Phonebook.Main.Entity;
+using Phonebook.Main.ReportGenerate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,8 +42,8 @@ namespace Phonebook.Main
             var appSettings = appSettingsSection.Get<AppSettings>();
 
             //Regiseter Services
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddSingleton(typeof(IEventBus), new EventBus.EventBus(appSettings.RabbitMqIp));
+            services.AddSingleton<IUnitOfWork, UnitOfWork>();
+            services.AddSingleton<IEventBus, EventBus.EventBus>();
             services.AddHostedService<ReportGenerateReceiver>();
 
             // Register the Swagger generator, defining 1 or more Swagger documents
