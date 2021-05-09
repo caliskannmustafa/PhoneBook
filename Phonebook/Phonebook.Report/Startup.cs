@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using Phonebook.EventBus;
 using Phonebook.Report.DAL;
 using Phonebook.Report.Entity;
 using System;
@@ -34,8 +35,14 @@ namespace Phonebook.Report
 
             services.AddDbContext<ReportDbContext>();
 
+            //Register AppSettings
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+            var appSettingsSection = Configuration.GetSection("AppSettings");
+            var appSettings = appSettingsSection.Get<AppSettings>();
+
             //Regiseter Services
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddSingleton(typeof(IEventBus), new EventBus.EventBus(appSettings.RabbitMqIp));
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen();

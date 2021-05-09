@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Phonebook.EventBus;
 using Phonebook.Report.DAL;
 using Phonebook.Report.Entity;
 using System;
@@ -13,10 +14,12 @@ namespace Phonebook.Report.Controllers
     public class ReportController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IEventBus _eventBus;
 
-        public ReportController(IUnitOfWork unitOfWork)
+        public ReportController(IUnitOfWork unitOfWork, IEventBus eventBus)
         {
             _unitOfWork = unitOfWork;
+            _eventBus = eventBus;
         }
 
         [HttpGet]
@@ -42,7 +45,7 @@ namespace Phonebook.Report.Controllers
             _unitOfWork.ReportRepository.Insert(report);
             _unitOfWork.Save();
 
-            //TODO: EventBusRabbitMq'ya raporla ilgili istek gönderimi yapılacak..
+            _eventBus.PushMessage("report_create", report.Id.ToString());
 
             return report.Id;
         }

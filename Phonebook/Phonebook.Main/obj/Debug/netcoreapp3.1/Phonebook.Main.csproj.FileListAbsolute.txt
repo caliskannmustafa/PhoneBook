@@ -30,12 +30,16 @@ F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\Newtonsoft.J
 F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\Npgsql.dll
 F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
 F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\Phonebook.EventBus.dll
+F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\Phonebook.EventBus.pdb
 F:\Repos\PhoneBook\Phonebook\Phonebook.Main\obj\Debug\netcoreapp3.1\Phonebook.Main.csprojAssemblyReference.cache
 F:\Repos\PhoneBook\Phonebook\Phonebook.Main\obj\Debug\netcoreapp3.1\Phonebook.Main.AssemblyInfoInputs.cache
 F:\Repos\PhoneBook\Phonebook\Phonebook.Main\obj\Debug\netcoreapp3.1\Phonebook.Main.AssemblyInfo.cs
