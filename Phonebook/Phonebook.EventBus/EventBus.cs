@@ -11,7 +11,11 @@ namespace Phonebook.EventBus
         private ConnectionFactory _connectionFactory;
         public EventBus(IOptions<AppSettings> appSettings)
         {
-            _connectionFactory = new ConnectionFactory() { HostName = appSettings.Value.RabbitMqIp, UserName = "admin", Password = "admin" };
+            _connectionFactory = new ConnectionFactory() { HostName = appSettings.Value.RabbitMqIp,
+                UserName = "ovommrzd",
+                VirtualHost = "ovommrzd",
+                Password = "PN_LcxVCW14Bdkk4fu8Ey0sgPc3RPpQC"
+            };
         }
 
         public void PushMessage(string queueName, string message)
