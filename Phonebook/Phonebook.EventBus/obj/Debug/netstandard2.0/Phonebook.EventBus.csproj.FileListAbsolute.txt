@@ -6,4 +6,3 @@ F:\Repos\PhoneBook\Phonebook\Phonebook.EventBus\obj\Debug\netstandard2.0\Phonebo
 F:\Repos\PhoneBook\Phonebook\Phonebook.EventBus\obj\Debug\netstandard2.0\Phonebook.EventBus.csproj.CoreCompileInputs.cache
 F:\Repos\PhoneBook\Phonebook\Phonebook.EventBus\obj\Debug\netstandard2.0\Phonebook.EventBus.dll
 F:\Repos\PhoneBook\Phonebook\Phonebook.EventBus\obj\Debug\netstandard2.0\Phonebook.EventBus.pdb
-F:\Repos\PhoneBook\Phonebook\Phonebook.EventBus\obj\Debug\netstandard2.0\Phonebook.EventBus.csprojAssemblyReference.cache
