@@ -18,11 +18,6 @@ namespace Phonebook.Presentation.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
-        {
-            //TODO: Get And Return Phonebook List From Gateway
-            return View();
-        }
 
         public IActionResult Privacy()
         {

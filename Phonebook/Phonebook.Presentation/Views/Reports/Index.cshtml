@@ -1,1 +1,34 @@
-﻿Rapor Listesi
+﻿@model IEnumerable<ReportViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<div id="dataDiv">
+
+</div>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+
+    $(document).ready(function () {
+        LoadLogListModal();
+    });
+
+    function LoadLogListModal()
+    {
+        var url = '@Url.Action("GetData", "Reports")';
+
+        $("#dataDiv").load(url, function (responseTxt, statusTxt, xhr) {
+            if (statusTxt == "success")
+            {
+                window.setTimeout(LoadLogListModal, 5000);
+            }
+        });
+    }
+
+</script>

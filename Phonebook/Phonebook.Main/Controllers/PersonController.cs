@@ -55,7 +55,12 @@ namespace Phonebook.Main.Controllers
         [Route("person/Update")]
         public void Update(Person person)
         {
-            _unitOfWork.PersonRepository.Update(person);
+            var currentData = _unitOfWork.PersonRepository.GetByID(person.Id);
+            currentData.CompanyName = person.CompanyName;
+            currentData.FirstName = person.FirstName;
+            currentData.LastName = person.LastName;
+
+            _unitOfWork.PersonRepository.Update(currentData);
             _unitOfWork.Save();
         }
 

@@ -9,6 +9,11 @@ namespace Phonebook.Main.Entity
 {
     public class PhonebookDbContext: DbContext
     {
+        public PhonebookDbContext()
+        {
+
+        }
+
         public readonly IConfiguration Configuration;
 
         public PhonebookDbContext(IConfiguration configuration)
