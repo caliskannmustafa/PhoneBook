@@ -43,6 +43,7 @@ namespace Phonebook.Report.Controllers
         {
             report.ReportStatus = Entity.Enums.EnumReportStatus.Processing;
             report.CreateDate = DateTime.Now;
+            report.ReportDate = DateTime.Now;
             _unitOfWork.ReportRepository.Insert(report);
             _unitOfWork.Save();
 
