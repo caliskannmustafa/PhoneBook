@@ -1793,6 +1793,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.Extensions.Options": "5.0.0",
           "RabbitMQ.Client": "6.2.1"
         },
         "compile": {

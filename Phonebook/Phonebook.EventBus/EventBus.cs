@@ -1,4 +1,5 @@
-﻿using RabbitMQ.Client;
+﻿using Microsoft.Extensions.Options;
+using RabbitMQ.Client;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,9 +9,9 @@ namespace Phonebook.EventBus
     public class EventBus : IEventBus
     {
         private ConnectionFactory _connectionFactory;
-        public EventBus(string rabbitMqIp)
+        public EventBus(IOptions<AppSettings> appSettings)
         {
-            _connectionFactory = new ConnectionFactory() { HostName = rabbitMqIp, UserName = "admin", Password = "admin" };
+            _connectionFactory = new ConnectionFactory() { HostName = appSettings.Value.RabbitMqIp, UserName = "admin", Password = "admin" };
         }
 
         public void PushMessage(string queueName, string message)

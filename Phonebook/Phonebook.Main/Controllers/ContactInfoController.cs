@@ -23,10 +23,7 @@ namespace Phonebook.Main.Controllers
         [HttpGet]
         [Route("contactinfo/Get/{personId}")]
         public IEnumerable<ContactInfo> Get(int personId)
-        {
-            GeoCoordinatePortable.GeoCoordinate firstCoordinate = new GeoCoordinatePortable.GeoCoordinate(41.487999, 32.371090);
-            GeoCoordinatePortable.GeoCoordinate secondCoordinate = new GeoCoordinatePortable.GeoCoordinate(39.807590, 32.696690);
-
+        {            
             return _unitOfWork.ContactInfoRepository.Get(t => t.PersonId == personId).ToList();
         }
 

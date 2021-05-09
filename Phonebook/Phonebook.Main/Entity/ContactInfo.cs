@@ -12,7 +12,26 @@ namespace Phonebook.Main.Entity
         public EnumContactType ContactType { get; set; }
         public string Value { get; set; }
         public int PersonId { get; set; }
-        [NotMapped]
         public virtual Person Person { get; set; }
+
+        public (double, double)? GetRoundedLocation()
+        {
+            switch (ContactType)
+            {
+                case EnumContactType.GeoLocation:
+                    var splitted = Value.Split(",");
+                    if (splitted != null && splitted.Any())
+                    {
+                        double lattitude = Math.Round(double.Parse(splitted.First()));
+                        double longitude = Math.Round(double.Parse(splitted.Last()));
+                        return (lattitude, longitude);
+                    }
+                    return null;
+                case EnumContactType.PhoneType:
+                case EnumContactType.EmailAddress:
+                default:
+                    return null;
+            }
+        }
     }
 }
