@@ -27,7 +27,7 @@ namespace Phonebook.Report.Controllers
         [Route("report/Get")]
         public IEnumerable<Entity.Report> Get()
         {
-            return _unitOfWork.ReportRepository.Get().ToList();
+            return _unitOfWork.ReportRepository.Get().Take(1000).OrderByDescending(t => t.CreateDate);
         }
 
         [HttpGet]

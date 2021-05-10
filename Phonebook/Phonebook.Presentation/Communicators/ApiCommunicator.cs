@@ -68,6 +68,10 @@ namespace Phonebook.Presentation.Communicators
             return _restApiHelper.CallService<int>(report, RestSharp.Method.POST, "report/Create");
         }
 
+        public string GenerateDummyData(int count)
+        {
+            return _restApiHelper.CallService<string>(null, RestSharp.Method.GET, "datagenerate/Get/" + count);
+        }
 
     }
 }

@@ -68,7 +68,6 @@ namespace Phonebook.Main.ReportGenerate
         {
             double roundedLatitude = Math.Round(reportGenerateMessage.Latitude);
             double roundedLongitude = Math.Round(reportGenerateMessage.Longitude);
-            string roundedLocation = string.Join(",", roundedLatitude.ToString(), roundedLongitude.ToString());
 
             int personCount = _unitOfWork.ContactInfoRepository.Get().Where(t => t.ContactType == Entity.Enums.EnumContactType.GeoLocation).Where(t => t.GetRoundedLocation().GetValueOrDefault().Item1 == roundedLatitude).Where(t => t.GetRoundedLocation().GetValueOrDefault().Item2 == roundedLongitude).Select(t => t.Person).Count();
             var phoneCount = _unitOfWork.ContactInfoRepository.Get().Where(t => t.ContactType == Entity.Enums.EnumContactType.GeoLocation).Where(t => t.GetRoundedLocation().GetValueOrDefault().Item1 == roundedLatitude).Where(t => t.GetRoundedLocation().GetValueOrDefault().Item2 == roundedLongitude).Where(t => t.Person.ContactInfos.Any(c => c.ContactType == Entity.Enums.EnumContactType.PhoneType)).Select(t => t.Person.ContactInfos.Count(t => t.ContactType == Entity.Enums.EnumContactType.PhoneType)).Sum();

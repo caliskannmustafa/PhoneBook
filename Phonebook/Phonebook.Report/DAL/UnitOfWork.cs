@@ -12,10 +12,9 @@ namespace Phonebook.Report.DAL
         public readonly IConfiguration _configuration;
         private readonly ReportDbContext _context;
 
-        public UnitOfWork(IConfiguration configuration)
+        public UnitOfWork(ReportDbContext context)
         {
-            _configuration = configuration;
-            _context = new ReportDbContext(_configuration);
+            _context = context;
         }
 
         private GenericRepository<Entity.Report> reportRepository;

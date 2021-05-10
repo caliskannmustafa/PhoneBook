@@ -47,6 +47,22 @@
         }
       ],
       "Key": "Report"
+    },
+    {
+      "UpstreamPathTemplate": "/api/datagenerate/{everything}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post"
+      ],
+      "DownstreamPathTemplate": "/datagenerate/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10015
+        }
+      ],
+      "Key": "datagenerate"
     }
   ]
 }

@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Phonebook.EventBus;
 using Phonebook.Main.DAL;
+using Phonebook.Main.DataGenerate;
 using Phonebook.Main.Entity;
 using Phonebook.Main.ReportGenerate;
 using System;
@@ -34,7 +35,7 @@ namespace Phonebook.Main
                   .AddNewtonsoftJson(options =>
                    options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
 
-            services.AddDbContext<PhonebookDbContext>();
+            services.AddDbContext<PhonebookDbContext>(ServiceLifetime.Transient);
 
             //Register AppSettings
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
@@ -42,9 +43,11 @@ namespace Phonebook.Main
             var appSettings = appSettingsSection.Get<AppSettings>();
 
             //Regiseter Services
-            services.AddSingleton<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddSingleton<IEventBus, EventBus.EventBus>();
             services.AddHostedService<ReportGenerateReceiver>();
+            services.AddHostedService<DataGenerateReceiver>();
+            services.AddSingleton<IRandomDataGenerator, RandomDataGenerator>();
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen();
