@@ -54,3 +54,6 @@ F:\Repos\PhoneBook\Phonebook\Phonebook.Main\obj\Debug\netcoreapp3.1\Phonebook.Ma
 F:\Repos\PhoneBook\Phonebook\Phonebook.Main\obj\Debug\netcoreapp3.1\Phonebook.Main.dll
 F:\Repos\PhoneBook\Phonebook\Phonebook.Main\obj\Debug\netcoreapp3.1\Phonebook.Main.pdb
 F:\Repos\PhoneBook\Phonebook\Phonebook.Main\obj\Debug\netcoreapp3.1\Phonebook.Main.genruntimeconfig.cache
+F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\Content\firstname.json
+F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\Content\lastname.json
+F:\Repos\PhoneBook\Phonebook\Phonebook.Main\bin\Debug\netcoreapp3.1\Content\phone.json

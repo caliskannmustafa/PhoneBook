@@ -12,10 +12,9 @@ namespace Phonebook.Main.DAL
         public readonly IConfiguration _configuration;
         private readonly PhonebookDbContext _context;
 
-        public UnitOfWork(IConfiguration configuration)
+        public UnitOfWork(PhonebookDbContext context)
         {
-            _configuration = configuration;
-            _context = new PhonebookDbContext(_configuration);
+            _context = context;
         }
 
         private GenericRepository<Person> personRepository;
@@ -70,6 +69,6 @@ namespace Phonebook.Main.DAL
             Dispose(true);
             GC.SuppressFinalize(this);
         }
-      
+
     }
 }

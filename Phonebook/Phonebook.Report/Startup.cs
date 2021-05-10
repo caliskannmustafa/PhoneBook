@@ -34,7 +34,7 @@ namespace Phonebook.Report
                   .AddNewtonsoftJson(options =>
                    options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
 
-            services.AddDbContext<ReportDbContext>();
+            services.AddDbContext<ReportDbContext>(ServiceLifetime.Transient);
 
             //Register AppSettings
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
@@ -42,7 +42,7 @@ namespace Phonebook.Report
             var appSettings = appSettingsSection.Get<AppSettings>();
 
             //Regiseter Services
-            services.AddSingleton<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IEventBus, EventBus.EventBus>();
             services.AddHostedService<ReportListenReceiver>();
 

@@ -25,15 +25,13 @@ namespace Phonebook.Main.Controllers
         [Route("person/Get")]
         public IEnumerable<Person> Get()
         {
-            return _unitOfWork.PersonRepository.Get();
+            return _unitOfWork.PersonRepository.Get().Take(1000).OrderByDescending(t => t.CreateDate);
         }
 
         [HttpGet]
         [Route("person/Get/{id}")]
         public Person Get(int id)
         {
-            RandomDataGenerator randomDataGenerator = new RandomDataGenerator();
-            randomDataGenerator.Generate();
             return _unitOfWork.PersonRepository.GetByID(id);
         }
 

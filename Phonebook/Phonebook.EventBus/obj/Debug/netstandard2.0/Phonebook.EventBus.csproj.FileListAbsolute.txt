@@ -1,6 +1,7 @@
 F:\Repos\PhoneBook\Phonebook\Phonebook.EventBus\bin\Debug\netstandard2.0\Phonebook.EventBus.deps.json
 F:\Repos\PhoneBook\Phonebook\Phonebook.EventBus\bin\Debug\netstandard2.0\Phonebook.EventBus.dll
 F:\Repos\PhoneBook\Phonebook\Phonebook.EventBus\bin\Debug\netstandard2.0\Phonebook.EventBus.pdb
+F:\Repos\PhoneBook\Phonebook\Phonebook.EventBus\obj\Debug\netstandard2.0\Phonebook.EventBus.csprojAssemblyReference.cache
 F:\Repos\PhoneBook\Phonebook\Phonebook.EventBus\obj\Debug\netstandard2.0\Phonebook.EventBus.AssemblyInfoInputs.cache
 F:\Repos\PhoneBook\Phonebook\Phonebook.EventBus\obj\Debug\netstandard2.0\Phonebook.EventBus.AssemblyInfo.cs
 F:\Repos\PhoneBook\Phonebook\Phonebook.EventBus\obj\Debug\netstandard2.0\Phonebook.EventBus.csproj.CoreCompileInputs.cache
